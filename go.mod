@@ -1,4 +1,4 @@
-module github.com/IbukiShinzato/go-cli-mac
+module github.com/IbukiShinzato/gcl
 
 go 1.21.4
 
