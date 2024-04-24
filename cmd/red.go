@@ -41,7 +41,10 @@ func init() {
 	} else if s == "3" {
 		err = exec.Command("open", "https://webclass.cc.u-ryukyu.ac.jp/webclass/login.php").Start()
 	} else {
-		err = exec.Command("open", "https://github.com").Start()
+		var user string
+		fmt.Printf("\n検索したいユーザー名を入力してください。\n無ければEnterをクリックしてください。\n")
+		fmt.Scanln(&user)
+		err = exec.Command("open", "https://github.com/"+user).Start()
 	}
 	fmt.Println(err)
 

@@ -1,0 +1,17 @@
+# gcl (go-cli-mac)
+
+## インストール方法
+
+#### `go install github/IbukiShinzato/gcl@v1.0.0`
+
+#### `export PATH=$PATH:~/go/bin`
+
+## リダイレクトコマンド
+
+#### `gcl red`
+
+- 番号を入力すると指定したサイトにリダイレクトします
+- GitHubを選択した場合、検索したいユーザーのユーザーネームを入力するとそのユーザーのGitHubにリダイレクトされます。
+- Enterを押すと自分のGitHubページにリダイレクトされます。
+
+
