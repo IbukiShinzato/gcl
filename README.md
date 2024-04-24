@@ -2,6 +2,8 @@
 
 ## インストール方法
 
+#### `go mod init github/IbukiShinzato/gcl`
+
 #### `go install github/IbukiShinzato/gcl@v1.0.0`
 
 #### `export PATH=$PATH:~/go/bin`
