@@ -2,9 +2,15 @@
 
 ## インストール方法
 
-#### `go install github/IbukiShinzato/gcl@v1.0.0`
+#### `git clone https://github.com/IbukiShinzato/gcl.git`
+
+#### `cd gcl`
+
+#### `go install`
 
 #### `export PATH=$PATH:~/go/bin`
+
+- 1回インストールしたらどこのディレクトリにいても実行できます。(ターミナルを消さない限り）
 
 ## リダイレクトコマンド
 
