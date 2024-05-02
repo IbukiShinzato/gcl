@@ -32,6 +32,7 @@ func init() {
 	fmt.Println("2: 琉球大学教務システム")
 	fmt.Println("3: WebClass")
 	fmt.Println("4: GitHub")
+	fmt.Println("5: AtCoder")
 	fmt.Scan(&s)
 	var err error
 	if s == "1" {
@@ -40,11 +41,20 @@ func init() {
 		err = exec.Command("open", "https://tiglon.jim.u-ryukyu.ac.jp/portal/Login.aspx").Start()
 	} else if s == "3" {
 		err = exec.Command("open", "https://webclass.cc.u-ryukyu.ac.jp/webclass/login.php").Start()
-	} else {
+	} else if s == "4" {
 		var user string
 		fmt.Printf("\n検索したいユーザー名を入力してください。\n無ければEnterをクリックしてください。\n")
 		fmt.Scanln(&user)
 		err = exec.Command("open", "https://github.com/"+user).Start()
+	} else {
+		var user string
+		fmt.Printf("\n検索したいユーザー名を入力してください。\n無ければEnterをクリックしてください。\n")
+		fmt.Scanln(&user)
+		if user != "" {
+			err = exec.Command("open", "https://atcoder.jp/users/"+user).Start()
+		} else {
+			err = exec.Command("open", "https://atcoder.jp/").Start()
+		}
 	}
 	fmt.Println(err)
 
