@@ -8,7 +8,7 @@
 
 #### `go install`
 
-#### `export PATH=$PATH:~/go/bin`
+#### `echo 'export PATH=$PATH:~/go/bin' >> ~/.zshrc`
 
 - 1回インストールしたらどこのディレクトリにいても実行できます。(ターミナルを消さない限り）
 
